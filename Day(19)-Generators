@@ -1,0 +1,8 @@
+def number_table_generator(num):
+    count = 1
+    while count <= 10:
+        yield num * count
+        count += 1 
+
+for n in number_table_generator(5):
+    print(n)
